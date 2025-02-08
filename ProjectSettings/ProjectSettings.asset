@@ -163,9 +163,10 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   androidMinAspectRatio: 1
   applicationIdentifier:
-    Android: com.DefaultCompany.PoissonDisc
+    Android: com.DefaultCompany.Crossplatform_MR
     Standalone: com.DefaultCompany.PoissonDisc
-    VisionOS: com.DefaultCompany.PoissonDisc
+    VisionOS: com.DefaultCompany.Crossplatform-MR
+    iPhone: com.DefaultCompany.Crossplatform-MR
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -586,6 +587,9 @@ PlayerSettings:
   m_BuildTargetDefaultTextureCompressionFormat:
   - serializedVersion: 3
     m_BuildTarget: Android
+    m_Formats: 03000000
+  - serializedVersion: 3
+    m_BuildTarget: iOS
     m_Formats: 03000000
   playModeTestRunnerEnabled: 0
   runPlayModeTestAsEditModeTest: 0
