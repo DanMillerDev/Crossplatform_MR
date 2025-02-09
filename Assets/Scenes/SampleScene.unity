@@ -930,7 +930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ObjectsToPlace:
-  - {fileID: 38335279662140195, guid: 34d3f526198dae440bb2ce6005d86055, type: 3}
+  - {fileID: 0}
   m_DiscSampler: {fileID: 1149405406}
   m_ShowObjectsOnCreation: 0
   m_AllowPlacementOnUniquePlanesOnly: 1
@@ -1277,11 +1277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17abbabfa73ea4ffba5c8474d27ab289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ObjectsToPlace:
-  - {fileID: 5186735023776687486, guid: ac8efb728f1fb9b4092c4df591c827ca, type: 3}
-  - {fileID: 3899520030806763256, guid: 299e7a1cb6456cf4fa6079cf5978df9b, type: 3}
-  - {fileID: 8903058273634794869, guid: f1fc5bb90ac285e4486771552d63bcb8, type: 3}
-  - {fileID: 3356751432538110193, guid: ffbddc4ef9676cc419e81e06aaa836d8, type: 3}
+  m_ObjectsToPlace: []
   m_DiscSampler: {fileID: 1708023831}
   m_ShowObjectsOnCreation: 0
   m_AllowPlacementOnUniquePlanesOnly: 1
