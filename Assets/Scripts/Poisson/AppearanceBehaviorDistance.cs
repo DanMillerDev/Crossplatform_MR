@@ -69,6 +69,8 @@ public class AppearanceBehaviorDistance : MonoBehaviour
                 foreach (GameObject go in m_SpawnRings[i])
                 {
                     go.SetActive(true);
+                    
+                    // TODO: fix bug with visionOS plane rotation for vertical objects
                     if (m_RandomizeRotation)
                     {
                         if (go.transform.up != Vector3.up)
