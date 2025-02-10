@@ -55,12 +55,12 @@ public class PlaceContentOnPlane : MonoBehaviour
     void OnEnable()
     {
         m_PolyspatialLayermask = ~(1 << LayerMask.NameToLayer("PolySpatial"));
-        PoissonCollisionManager.OnPlaneCollisionEvent += PlaceObjectsOnPlane; 
+        PlaneCollisionManager.OnPlaneCollisionEvent += PlaceObjectsOnPlane; 
     }
 
     void OnDisable()
     {
-         PoissonCollisionManager.OnPlaneCollisionEvent -= PlaceObjectsOnPlane;
+         PlaneCollisionManager.OnPlaneCollisionEvent -= PlaceObjectsOnPlane;
     }
     void Update()
     {

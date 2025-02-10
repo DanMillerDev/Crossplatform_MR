@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MinScale: 0.25
-  m_MaxScale: 1.25
+  m_MaxScale: 1
   m_TimeToScale: 0.15
 --- !u!1 &1036942580468532898
 GameObject:

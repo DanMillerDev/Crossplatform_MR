@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.ARFoundation;
-public class PoissonCollisionManager : MonoBehaviour
+public class PlaneCollisionManager : MonoBehaviour
 {
     public static event Action<ARPlane, Vector3?> OnPlaneCollisionEvent;
     

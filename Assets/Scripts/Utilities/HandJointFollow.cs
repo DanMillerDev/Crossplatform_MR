@@ -17,6 +17,9 @@ public class HandJointFollow : MonoBehaviour
     
     [SerializeField]
     MovementType m_MovementType;
+
+    [SerializeField]
+    bool m_DisableGameObjectOnTrackingLost = false;
     
     XRHandJoint m_TrackedJoint;
     XRHandSubsystem m_XRHandSubsystem;
@@ -68,6 +71,10 @@ public class HandJointFollow : MonoBehaviour
                 {
                     transform.SetPositionAndRotation(pose.position, pose.rotation);
                 }
+            } 
+            else if(m_DisableGameObjectOnTrackingLost)
+            {
+                gameObject.SetActive(false);
             }
         }
     }
@@ -100,10 +107,14 @@ public class HandJointFollow : MonoBehaviour
     {
         if (m_XRHandSubsystem == null)
         {
-#if !UNITY_EDITOR
-                Debug.LogError("Could not find Hand Subsystem");
+#if UNITY_EDITOR
+            if (m_DisableGameObjectOnTrackingLost)
+            {
+                gameObject.SetActive(false);
+            }
+#else 
+            Debug.LogError("Could not find Hand Subsystem");
 #endif
-            enabled = false;
             return false;
         }
 
