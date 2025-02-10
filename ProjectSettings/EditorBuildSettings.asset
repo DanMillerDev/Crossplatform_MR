@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/DiscSampling_Debug.unity
-    guid: 769c1faed86004afb9d62a7c41546c39
   - enabled: 1
     path: Assets/Scenes/DiscSampling.unity
     guid: 99c9720ab356a0642a771bea13969a05

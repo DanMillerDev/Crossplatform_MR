@@ -29,6 +29,8 @@
 # Mac
 .DS_Store
 
+.utmp/
+
 # Visual Studio cache directory
 .vs/
 
