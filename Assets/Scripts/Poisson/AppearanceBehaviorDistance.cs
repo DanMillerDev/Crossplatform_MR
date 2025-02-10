@@ -59,21 +59,27 @@ public class AppearanceBehaviorDistance : MonoBehaviour
 
     IEnumerator ShowRings()
     {
+        // wait for end of frame to make sure ring list is populated
+        yield return new WaitForEndOfFrame();
+        
         for (int i = 0; i < k_MaxSpawnRings; i++)
         {
-            foreach (GameObject go in m_SpawnRings[i])
+            if (m_SpawnRings[i].Count > 0)
             {
-                go.SetActive(true);
-                if (m_RandomizeRotation)
+                foreach (GameObject go in m_SpawnRings[i])
                 {
-                    if(go.transform.up != Vector3.up)
+                    go.SetActive(true);
+                    if (m_RandomizeRotation)
                     {
-                        // maintain rotation for vertical objects
-                        go.transform.localEulerAngles += new Vector3(Random.Range(0.0f, 360.0f), 0, 0);
-                    }
-                    else
-                    {
-                        go.transform.localEulerAngles = new Vector3(0, Random.Range(0.0f, 360.0f), 0);                       
+                        if (go.transform.up != Vector3.up)
+                        {
+                            // maintain rotation for vertical objects
+                            go.transform.localEulerAngles += new Vector3(Random.Range(0.0f, 360.0f), 0, 0);
+                        }
+                        else
+                        {
+                            go.transform.localEulerAngles = new Vector3(0, Random.Range(0.0f, 360.0f), 0);
+                        }
                     }
                 }
             }
