@@ -61,7 +61,7 @@ namespace UnityEngine.XR.OpenXR.Features.Meta.Tests
 
         void OnPermissionDenied(string permission)
         {
-            // handle denied permission
+            // TODO handle denied permission
         }
 
         void OnPermissionGranted(string permission)
