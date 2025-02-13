@@ -13,6 +13,8 @@ plans to support [Android XR](https://www.android.com/xr/) based devices in the 
 
 
 ## Poisson Disc Sampling for Surfaces
+![discSampling_quest](https://github.com/user-attachments/assets/c19367c8-5994-4829-b0ce-66c2af13c6e1)
+
 This feature uses the [poisson disc sampling technique](https://en.wikipedia.org/wiki/Supersampling#Poisson_disk) to distrubute objects on a physical surface using [AR Planes](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@6.1/manual/features/plane-detection/arplane.html) through [AR Foundation](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@6.1/manual/index.html). It's designed to offer flexibility for random content distribution, unique content per plane alignment, and customizable appearance behavior.
 
 #### [PoissonDiscSampling.cs](https://github.com/DanMillerDev/Crossplatform_MR/blob/main/Assets/Scripts/Poisson/PoissonDiscSampling.cs)
