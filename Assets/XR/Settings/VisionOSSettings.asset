@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: VisionOSSettings
   m_EditorClassIdentifier: 
   m_AppMode: 1
-  m_HandsTrackingUsageDescription: hands
-  m_WorldSensingUsageDescription: world
+  m_HandsTrackingUsageDescription: Hand tracking required for interactions
+  m_WorldSensingUsageDescription: World sensing required for placing content in the
+    world
   m_RuntimeSettings: {fileID: 11400000, guid: d28412a67c1ed4503be5c88b5be6a801, type: 2}
   m_UpperLimbVisibility: 0
   m_FoveatedRendering: 1
