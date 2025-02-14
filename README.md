@@ -34,6 +34,8 @@ a utility script for doing collision detection on AR planes and invoking an even
 
 
 ## Utility
+![JointUtility_Square](https://github.com/user-attachments/assets/821be758-78df-4851-9acb-1229c4251762)
+
 
 #### [HandJointFollow.cs](https://github.com/DanMillerDev/Crossplatform_MR/blob/main/Assets/Scripts/Utilities/HandJointFollow.cs)
 A script for moving an object based on XR Hand joint ID pose data. Options for Direct transform setting or rigidbody move position.
