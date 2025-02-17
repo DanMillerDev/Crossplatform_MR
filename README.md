@@ -11,6 +11,24 @@ plans to support [Android XR](https://www.android.com/xr/) based devices in the 
 > **⚠️ WARNING: The support for Apple Vision Pro uses [Unity PolySpatial](https://unity.com/campaign/spatial).**  
 > This requires a Unity Pro, Enterprise or Industry license. This is NOT required for Quest support.
 
+## Scene Setup
+
+### DiscSampling
+Advanced setup with unique content appearing on different surfaces. It also uses the the callback event to show the content in a unique way, revealing itself in rings originating from the point of contact.
+
+### DiscSampling_Debug
+Basic setup that has the same content appear on all surfaces. It creates the content instantly and has debug visuals for the content and AR planes.
+
+## Project Requirements
+
+### Meta Quest
+The user needs to have gone through Space setup to layout and map their real environment. See: [The Documentation](https://docs.unity3d.com/Packages/com.unity.xr.meta-openxr@2.1/manual/get-started/device-setup.html#space-setup).
+
+The user will have to grant the app permission to use the Space setup.
+
+### Apple Vision Pro
+This project uses Unity PolySpatial and requires a Pro, Enterpise or Industry license. If you don't have one of those license the project will prompt you to remove the PolySpatial packages. If you are building for meta quest it is okay to do so.
+
 
 ## Poisson Disc Sampling for Surfaces
 ![discSampling_quest](https://github.com/user-attachments/assets/c19367c8-5994-4829-b0ce-66c2af13c6e1)
