@@ -26,9 +26,9 @@ namespace UnityEngine.XR.OpenXR.Features.Meta.Tests
             var permissions = new List<string>();
 
             // add permissions that have not been granted by the user
-            if (!Permission.HasUserAuthorizedPermission(k_ScenePermission))
+            if (!Permission.HasUserAuthorizedPermission(k_MetaScenePermission))
             {
-                permissions.Add(k_ScenePermission);
+                permissions.Add(k_MetaScenePermission);
             }
             else
             {
@@ -67,7 +67,7 @@ namespace UnityEngine.XR.OpenXR.Features.Meta.Tests
         void OnPermissionGranted(string permission)
         {
             // enable the corresponding AR Manager component after required permission is granted
-            if (permission == k_ScenePermission)
+            if (permission == k_MetaScenePermission)
             {
                 m_ARPlaneManager.enabled = true;
             }
